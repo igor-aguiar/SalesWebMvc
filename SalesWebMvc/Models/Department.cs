@@ -13,6 +13,10 @@ namespace SalesWebMvc.Models
             Name = name;
         }
 
+        public Department()
+        {
+        }
+
         public int Id { get; set; }
         public string Name { get; set; }
     }
