@@ -68,5 +68,21 @@ namespace SalesWebMvc.Controllers
             var seller = _sellerService.FindById(id);
             return View(seller);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Seller seller)
+        {
+            _sellerService.Update(seller);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var seller = _sellerService.FindById(id);
+            var depts = _departmentService.FindAll();
+            var viewModel = new SellerFormViewModel { Seller = seller , Departments = depts};
+            return View(viewModel);
+        }
     }
 }

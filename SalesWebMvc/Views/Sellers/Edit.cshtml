@@ -6,7 +6,8 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <form asp-action="Create">
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="Seller.Id" />
         <div class="form-group">
             <label asp-for="Seller.Name" class="control-label"></label>
             <input asp-for="Seller.Name" class="form-control" />
