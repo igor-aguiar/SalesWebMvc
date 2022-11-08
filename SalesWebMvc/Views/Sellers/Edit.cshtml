@@ -1,0 +1,32 @@
+﻿@model SalesWebMvc.Models.ViewModels.SellerFormViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form asp-action="Create">
+        <div class="form-group">
+            <label asp-for="Seller.Name" class="control-label"></label>
+            <input asp-for="Seller.Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Seller.Email" class="control-label"></label>
+            <input asp-for="Seller.Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Seller.BirthDate" class="control-label"></label>
+            <input asp-for="Seller.BirthDate" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Seller.BaseSalary" class="control-label"></label>
+            <input asp-for="Seller.BaseSalary" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Seller.DepartmentId"></label>
+            <select asp-for="Seller.DepartmentId" asp-items="@(new SelectList(Model.Departments, "Id", "Name"))"></select>
+        </div>
+        <button class="btn-success">Edit</button>
+    </form>
+</div>
