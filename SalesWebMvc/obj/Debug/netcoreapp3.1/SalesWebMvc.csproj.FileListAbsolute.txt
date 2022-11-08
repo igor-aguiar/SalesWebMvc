@@ -314,3 +314,4 @@ C:\Users\eliss\Source\Repos\igor-aguiar\SalesWebMvc\SalesWebMvc\obj\Debug\netcor
 C:\Users\eliss\Source\Repos\igor-aguiar\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp3.1\SalesWebMvc.genruntimeconfig.cache
 C:\Users\eliss\Source\Repos\igor-aguiar\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Index.cshtml.g.cs
 C:\Users\eliss\Source\Repos\igor-aguiar\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Create.cshtml.g.cs
+C:\Users\eliss\Source\Repos\igor-aguiar\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Delete.cshtml.g.cs
