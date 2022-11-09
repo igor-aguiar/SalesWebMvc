@@ -63,9 +63,13 @@ namespace SalesWebMvc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details(int? id)
         {
-            var seller = _sellerService.FindById(id);
+            if (id == null)
+            {
+                return RedirectToAction(nameof(Error));
+            }
+            var seller = _sellerService.FindById(id.Value);
             return View(seller);
         }
 
@@ -83,6 +87,12 @@ namespace SalesWebMvc.Controllers
             var depts = _departmentService.FindAll();
             var viewModel = new SellerFormViewModel { Seller = seller , Departments = depts};
             return View(viewModel);
+        }
+
+        public IActionResult Error()
+        {
+            var vieModel = new ErrorViewModel();
+            return View(vieModel);
         }
     }
 }
