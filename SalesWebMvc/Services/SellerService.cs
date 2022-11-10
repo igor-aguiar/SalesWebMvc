@@ -38,6 +38,7 @@ namespace SalesWebMvc.Services
         {
             var seller = _context.Sellers.Find(id);
             _context.Sellers.Remove(seller);
+            _context.SalesRecords.RemoveRange(_context.SalesRecords.Where(sales => sales.Seller.Id == seller.Id));
             _context.SaveChanges();
         }
 
