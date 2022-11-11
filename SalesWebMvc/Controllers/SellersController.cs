@@ -26,9 +26,9 @@ namespace SalesWebMvc.Controllers
             return View(list);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            List<Department> departments = _departmentService.FindAll();
+            List<Department> departments = await _departmentService.FindAllAsync();
             var sellerFormViewModel = new SellerFormViewModel { Departments = departments };
             return View(sellerFormViewModel);
         }
@@ -81,10 +81,10 @@ namespace SalesWebMvc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             var seller = _sellerService.FindById(id);
-            var depts = _departmentService.FindAll();
+            var depts = await _departmentService.FindAllAsync();
             var viewModel = new SellerFormViewModel { Seller = seller , Departments = depts};
             return View(viewModel);
         }

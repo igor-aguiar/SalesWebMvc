@@ -8565,19 +8565,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eliss\\.nuget\\packages\\": {}
+    "C:\\Users\\Igor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eliss\\Source\\Repos\\igor-aguiar\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
       "projectName": "SalesWebMvc",
-      "projectPath": "C:\\Users\\eliss\\Source\\Repos\\igor-aguiar\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
-      "packagesPath": "C:\\Users\\eliss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eliss\\Source\\Repos\\igor-aguiar\\SalesWebMvc\\SalesWebMvc\\obj\\",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
+      "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\SalesWebMvc\\SalesWebMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eliss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8640,7 +8640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
